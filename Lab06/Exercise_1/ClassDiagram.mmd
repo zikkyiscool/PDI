@@ -1,0 +1,13 @@
+classDiagram
+    class Vehicle {
+        -String brand
+        -int year
+        +start() void
+    }
+
+    class Car {
+        -int num_doors
+        +honk() void
+    }
+
+    Vehicle <|-- Car
