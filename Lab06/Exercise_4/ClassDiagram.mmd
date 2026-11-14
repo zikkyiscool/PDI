@@ -1,0 +1,15 @@
+classDiagram
+    class BankAccount {
+        -String account_number
+        -double balance
+        +BankAccount(account_number, balance)
+        +display_info() void
+    }
+
+    class SavingsAccount {
+        -double interest_rate
+        +SavingsAccount(account_number, balance, interest_rate)
+        +display_info() void
+    }
+
+    BankAccount <|-- SavingsAccount

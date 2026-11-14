@@ -1,0 +1,21 @@
+classDiagram
+    class Payment {
+        <<abstract>>
+        +process_payment(amount) void*
+    }
+
+    class CreditCardPayment {
+        +process_payment(amount) void
+    }
+
+    class PayPalPayment {
+        +process_payment(amount) void
+    }
+
+    class BankTransferPayment {
+        +process_payment(amount) void
+    }
+
+    Payment <|-- CreditCardPayment
+    Payment <|-- PayPalPayment
+    Payment <|-- BankTransferPayment

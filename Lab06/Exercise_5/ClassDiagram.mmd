@@ -1,0 +1,14 @@
+classDiagram
+    class LibraryItem {
+        #String _title
+        #int _id
+        +LibraryItem(title, id)
+        +display_info() void
+    }
+
+    class Book {
+        +Book(title, id)
+        +display_info() void
+    }
+
+    LibraryItem <|-- Book

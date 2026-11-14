@@ -1,0 +1,29 @@
+classDiagram
+    class Product {
+        -String name
+        -double price
+        +Product(name, price)
+        +get_info() String
+    }
+
+    class Electronics {
+        -int warranty
+        +Electronics(name, price, warranty)
+        +get_info() String
+    }
+
+    class Clothing {
+        -String size
+        +Clothing(name, price, size)
+        +get_info() String
+    }
+
+    class Book {
+        -String author
+        +Book(name, price, author)
+        +get_info() String
+    }
+
+    Product <|-- Electronics
+    Product <|-- Clothing
+    Product <|-- Book

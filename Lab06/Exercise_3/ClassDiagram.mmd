@@ -1,0 +1,19 @@
+classDiagram
+    class Person {
+        -String name
+        +Person(name)
+    }
+
+    class Student {
+        -String student_id
+        +Student(name, student_id)
+    }
+
+    class OnlineStudent {
+        -String zoom_id
+        +OnlineStudent(name, student_id, zoom_id)
+        +display_info() void
+    }
+
+    Person <|-- Student
+    Student <|-- OnlineStudent

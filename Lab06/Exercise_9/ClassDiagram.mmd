@@ -1,0 +1,27 @@
+classDiagram
+    class Transport {
+        <<abstract>>
+        #double distance
+        +Transport(distance)
+        +calculate_fare() double*
+        +display_fare() void
+    }
+
+    class BusTransport {
+        +BusTransport(distance)
+        +calculate_fare() double
+    }
+
+    class MetroTransport {
+        +MetroTransport(distance)
+        +calculate_fare() double
+    }
+
+    class TaxiTransport {
+        +TaxiTransport(distance)
+        +calculate_fare() double
+    }
+
+    Transport <|-- BusTransport
+    Transport <|-- MetroTransport
+    Transport <|-- TaxiTransport

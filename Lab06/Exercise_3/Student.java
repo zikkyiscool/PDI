@@ -7,5 +7,4 @@ public class Student extends Person {
         super(name) ;
         this.student_id = student_id;
     }
-
 }

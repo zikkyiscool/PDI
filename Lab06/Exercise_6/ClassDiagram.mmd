@@ -1,0 +1,28 @@
+classDiagram
+    class Shape {
+        +area() double
+    }
+
+    class Circle {
+        -double radius
+        +Circle(radius)
+        +area() double
+    }
+
+    class Rectangle {
+        -double width
+        -double height
+        +Rectangle(width, height)
+        +area() double
+    }
+
+    class Triangle {
+        -double base
+        -double height
+        +Triangle(base, height)
+        +area() double
+    }
+
+    Shape <|-- Circle
+    Shape <|-- Rectangle
+    Shape <|-- Triangle
